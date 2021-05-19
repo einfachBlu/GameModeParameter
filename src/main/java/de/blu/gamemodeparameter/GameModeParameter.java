@@ -36,6 +36,10 @@ public final class GameModeParameter extends JavaPlugin implements Listener {
       return;
     }
 
+    if (!command.equalsIgnoreCase("gamemode")) {
+      return;
+    }
+
     String gameModeParameter = message.split(" ")[1];
 
     try {
